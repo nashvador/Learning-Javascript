@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #497fc3;
+  color: white;
+}
+
+.water {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  transition: ease-in 0.3s;
+}
+
+.drop {
+  font-size: 50px;
+  color: white;
+}
+
+.active {
+  color: blue;
+}
+
+.cup {
+  background-color: white;
+  border: 4px solid #144fc6;
+  color: #144fc6;
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 0.3s ease;
+}
+#litres {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.percentage {
+  background-color: #497fc3;
+  width: 150px;
+  height: 0px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30px;
+  transition: 0.2s ease;
+}
