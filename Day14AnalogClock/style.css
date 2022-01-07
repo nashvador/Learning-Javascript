@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  transition: all 1s;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  /* border: 15px solid black; */
+  margin: 50px auto;
+  border-radius: 100%;
+  position: relative;
+  padding: 2rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+
+.hand.hand-seconds {
+  background: red;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: 0.3s all;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hand-hour {
+  height: 4px;
+  width: 40%;
+  left: 10%;
+}
+
+.mode {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  transition: all 1s;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  margin-bottom: 1rem;
+}
+
+.date {
+  margin-bottom: 1rem;
+  color: #5b6a7a;
+  font-weight: 100;
+}
+
+.light-button {
+  color: black;
+  background-color: white;
+}
+
+.background {
+  background-color: black;
+  color: white;
+}
+
+.hand-color {
+  background-color: white;
+}
+
+.clock-black {
+  border: 15px solid white;
+}
